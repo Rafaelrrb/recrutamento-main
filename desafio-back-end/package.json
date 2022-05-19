@@ -1,0 +1,31 @@
+{
+  "name": "desafio-back-end",
+  "version": "1.0.0",
+  "description": "## Proposta:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql",
+    "livros": "npx nodemon src/Api-Livros.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-toolkit/schema-merging": "^0.10.7",
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.11",
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.5.0",
+    "graphql-tools": "^8.2.9",
+    "merge-graphql-schemas": "^1.7.8",
+    "mongoose": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.12",
+    "nodemon": "^2.0.16"
+  }
+}

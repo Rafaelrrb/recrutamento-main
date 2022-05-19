@@ -1,0 +1,19 @@
+type Livros {
+  _id: ID!
+  name: String!
+  autor: String!
+}
+input LivrosInput {
+  name: String!
+  autor: String!
+}
+type Query {
+  listaLivros: [Livros!]!
+  buscaLivro(id: ID!): Livros!
+}
+
+type Mutation {
+  createLivro(data: LivrosInput!): Livros!
+  updateLivro(id: ID!, data: LivrosInput!): Livros!
+  deletaLivro(id: ID!): Boolean
+}
